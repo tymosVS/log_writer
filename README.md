@@ -22,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+## For create logger object
+
+LogWriter::Writer.new
+
+## For create logger object with different default_string
+
+LogWriter::Writer.new('Some text')
+
+## Indication of the displayed text
+
+log_writer.default_string = 'Some text'
+
+## For run 
+
+log_writer.run
+
+## Put the following text in the initializer for run in RoR's aplicatin
+log_writer = LogWriter::Writer.new
+log_writer.run
+
 
 ## Development
 
