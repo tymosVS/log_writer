@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'log_writer'
   spec.description   = "Hometask writes console input to RoR's logs"
-  spec.homepage      = 'https://rubygems.org/profiles/timos9vs'
+  spec.homepage      = 'https://github.com/tymosVS/log_writer'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
