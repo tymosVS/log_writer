@@ -2,30 +2,32 @@ require_relative 'lib/log_writer/version'
 require_relative 'lib/log_writer/writer'
 
 Gem::Specification.new do |spec|
-  spec.name          = "log_writer"
+  spec.name          = 'log_writer'
   spec.version       = LogWriter::VERSION
-  spec.authors       = "Vladimir"
-  spec.email         = "timos9vs@gmail.com"
+  spec.authors       = 'Vladimir'
+  spec.email         = 'timos9vs@gmail.com'
 
-  spec.summary       = "log_writer"
+  spec.summary       = 'log_writer'
   spec.description   = "Hometask writes console input to RoR's logs"
-  # spec.homepage      = "http://localhost:3000"
-  spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
+  spec.homepage      = 'https://rubygems.org/profiles/timos9vs'
+  spec.license       = 'MIT'
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org/profiles/timos9vs'
 
-  # spec.metadata["homepage_uri"] = spec.homepage
-  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata['homepage_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = 'https://github.com/tymosVS/log_writer'
+  spec.metadata['changelog_uri'] = 'https://github.com/tymosVS/log_writer'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files = Dir.chdir(File.expand_path('..', __FILE__)) do
+    `git ls-files -z`.split("\x0").reject do |f|
+      f.match(%r{^(test|spec|features)/})
+    end
   end
-  spec.files.push("lib/log_writer/writer.rb")
-  spec.bindir        = "exe"
+  spec.files.push('lib/log_writer/writer.rb')
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 end
