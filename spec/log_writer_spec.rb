@@ -17,4 +17,9 @@ RSpec.describe LogWriter do
     l_w.default_string = 'Check text'
     expect{ l_w.run }.to output("Check text\n").to_stdout
   end
+
+  it 'Possible set new default string using inisializer' do
+    l_w = LogWriter::Writer.new('Check text')
+    expect{ l_w.run }.to output("Check text\n").to_stdout
+  end
 end
