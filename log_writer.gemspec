@@ -8,12 +8,12 @@ Gem::Specification.new do |spec|
   spec.email         = 'timos9vs@gmail.com'
 
   spec.summary       = 'log_writer'
-  spec.description   = "Hometask writes console input to RoR's logs"
+  spec.description   = "Hometask writes some string to RoR's logs"
   spec.homepage      = 'https://github.com/tymosVS/log_writer'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
-  spec.metadata['allowed_push_host'] = 'https://rubygems.org/profiles/timos9vs'
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/tymosVS/log_writer'
