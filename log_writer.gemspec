@@ -1,5 +1,7 @@
 require_relative 'lib/log_writer/version'
 require_relative 'lib/log_writer/writer'
+# require_relative 'lib/generators/log_writer_generator'
+
 
 Gem::Specification.new do |spec|
   spec.name          = 'log_writer'
@@ -27,6 +29,9 @@ Gem::Specification.new do |spec|
     end
   end
   spec.files.push('lib/log_writer/writer.rb')
+  spec.files.push('lib/generators/templates/log_writer.rb')
+  spec.files.push('lib/generators/log_writer_generator.rb')
+  spec.add_runtime_dependency 'rails', '~> 5.1'
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
