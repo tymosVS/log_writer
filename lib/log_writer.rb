@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'log_writer/writer'
 require_relative 'log_writer/version'
 require_relative 'log_writer/config'

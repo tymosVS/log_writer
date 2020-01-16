@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
+# dinamic change printed text
 module LogWriter
-
   def self.configure
     yield config
   end
