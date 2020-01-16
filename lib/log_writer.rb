@@ -1,6 +1,6 @@
 require_relative 'log_writer/writer'
 require_relative 'log_writer/version'
-require_relative 'generators/log_writer_generator'
+require_relative 'log_writer/config'
 
 require 'rails'
 require 'thor'
@@ -10,7 +10,7 @@ module LogWriter
 
   module Rails
     class MyRailtie < ::Rails::Railtie
-      initializer 'log_writer' do
+      config.after_initialize do
         log_writer = LogWriter::Writer.new
         log_writer.run
       end

@@ -33,7 +33,6 @@ RSpec.describe LogWriter do
   end
 
   it 'print default message' do
-    str = "Some text\n"
     expect{ LogWriter::Writer.new.run }.to output(str).to_stdout
   end
 

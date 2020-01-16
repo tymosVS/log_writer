@@ -3,10 +3,9 @@
 module LogWriter
   # commont gem functional
   class Writer
-    attr_writer :default_string
 
-    def initialize(str = 'Some text')
-      @default_string = str
+    def initialize
+      @default_string = LogWriter.config.default_text
     end
 
     def run
