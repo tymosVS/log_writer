@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
   end
   spec.files.push('lib/log_writer/writer.rb')
   spec.files.push('lib/log_writer/config.rb')
+  spec.files.push('lib/log_writer/runner.rb')
   spec.files.push('lib/generators/templates/log_writer.rb')
   spec.files.push('lib/generators/log_writer_generator.rb')
   spec.add_runtime_dependency 'rails', '~> 5.1'
